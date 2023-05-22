@@ -54,11 +54,18 @@ body {
 
 a {
 	text-decoration: none;
+	display: block;
 }
 
 h3 {
 	font-size: 24px;
 	text-align: center;
+}
+
+img {
+	vertical-align: bottom;
+	max-width: 100%;
+	height: auto;
 }
 
 .container {
@@ -78,10 +85,17 @@ h3 {
 
 .social-media-fb a {
 	color: #4460A0;
+	padding-right: 8px;
+	border-right: 1px solid #cccccc;
 }
 
 .social-media-twitter a {
 	color: #00AAEC;
+	padding-left: 8px;
+}
+
+.social-media-fb, .social-media-twitter {
+	cursor: pointer;
 }
 
 header {
@@ -105,17 +119,27 @@ header h1 a {
 .navbar {
 	display: flex;
 	justify-content: end;
-	gap: 24px;
 }
 
-.nav-item {
-	padding: 18px 0 17px 0;
+.nav-item a {
+	display: block;
+	color: #00CC99;
+	padding: 17px 12px;
+	border-bottom: 2px solid transparent;
+}
+
+.nav-item a:hover {
+	border-bottom: 2px solid #00CC99;
+	transition: .5s;
 }
 
 .banner {
 	background-image: url("./images/banner.png");
+	background-size: cover;
 	height: 346px;
 	width: 100%;
+	display: flex;
+	align-items: center;
 }
 
 .banner h2 {
@@ -123,6 +147,8 @@ header h1 a {
 	color: #fff;
 	padding: 20px;
 	line-height: 1.2;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .course {
@@ -166,7 +192,7 @@ header h1 a {
 
 .contact h3 {
 	color: #fff;
-	line-height: 1.5;
+	line-height: 1.2;
 	padding-top: 36px;
 	padding-bottom: 28px;
 }
@@ -199,6 +225,11 @@ header h1 a {
 	margin-bottom: 16px;
 }
 
+.btn {
+	display: flex;
+	justify-content: end;
+}
+
 .btn-submit {
 	color: #fff;
 	background-color: #00CC99;
@@ -206,6 +237,11 @@ header h1 a {
 	padding: 8px 20px;
 	margin-top: 4px;
 	cursor: pointer;
+}
+
+.btn-submit:hover {
+	color: #00CC99;
+	background-color: #fff;
 }
 
 footer {
@@ -228,10 +264,21 @@ footer h2 a {
 	white-space: nowrap;
 }
 
-.link-list a {
+.link-item {
+	display: flex;
+}
+
+.link-item a {
 	color: #E12D80;
 }
 
-.link-list a:hover {
+.link-item a:hover {
 	color: #00CC99;
+}
+.mb-8 {
+	margin-bottom: 8px;
+}
+
+.mr-4 {
+	margin-right: 4px;
 }
