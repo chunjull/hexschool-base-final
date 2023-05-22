@@ -153,17 +153,51 @@ header h1 a {
 
 .course {
 	padding: 24px 20px 0 20px;
+	margin-top: 30px;
 }
 
 .course-list {
 	display: flex;
-	gap: 24px;
+	justify-content: space-between;
 }
 
 .course-item {
 	width: 300px;
 	padding: 20px;
-	border: 1px solid #000;
+	box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+}
+
+.course-item img {
+	width: 150px;
+	height: 150px;
+	object-fit: contain;
+	margin: 0 auto;
+}
+
+.course-item h3 {
+	font-size: 16px;
+	font-weight: 500;
+	margin: 8px 0;
+}
+
+.course-item:hover {
+	box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.4);;
+}
+
+.course-item p {
+	line-height: 1.5;
+}
+
+.jquery-list {
+	list-style-type: disc;
+	padding-left: 16px;
+}
+
+.jquery-item {
+	margin-bottom: 8px;
 }
 
 .compare {
@@ -175,8 +209,30 @@ header h1 a {
 }
 
 .table-title {
+	font-weight: 700;
 	background-color: #f7f7f7;
 	border-top: 1px solid #ddd;
+}
+
+.table-title:hover {
+	background-color: #f7f7f7;
+}
+
+th, td {
+	width: 25vw;
+	height: 36px;
+	text-align-last: left;
+	padding: 8px 0;
+	padding-left: 20px;
+}
+
+.td-green {
+	color: #009771;
+}
+
+tr:hover {
+	background-color: rgba(0, 204, 153, .1);
+	cursor: pointer;
 }
 
 .compare-table tr {
@@ -206,6 +262,8 @@ header h1 a {
 	width: 460px;
 	height: 245px;
 	padding: 8px 12px;
+	border: none;
+	border-radius: 4px;
 }
 
 .contact-info {
@@ -223,6 +281,8 @@ header h1 a {
 	height: 32px;
 	padding: 8px 12px;
 	margin-bottom: 16px;
+	border: none;
+	border-radius: 4px;
 }
 
 .btn {
@@ -242,6 +302,7 @@ header h1 a {
 .btn-submit:hover {
 	color: #00CC99;
 	background-color: #fff;
+	transition: .5s;
 }
 
 footer {
